@@ -11,7 +11,7 @@ def generate_launch_description():
     assert os.path.exists(rviz_config_dir)
 
     ply_path = os.path.join(get_package_share_directory(
-        'pcd_publisher'), 'resource', 'bunny.ply')
+        'pcd_publisher'), 'resource', 'teapot.ply')
     assert os.path.exists(rviz_config_dir)
 
     return LaunchDescription([
