@@ -5,7 +5,7 @@
 
 This is an example package which demonstrates how to publish a PointCloud2 message using Python in ROS2. The point cloud is visualized using RViz2.
 
-A full write-up can be found on my blog: [sebastiangrans.github.io](sebastiangrans.github.io)
+A full write-up can be found on my blog: [sebastiangrans.github.io](http://sebastiangrans.github.io/Visualizing-PCD-with-RViz/)
 
 ## Installation
 
