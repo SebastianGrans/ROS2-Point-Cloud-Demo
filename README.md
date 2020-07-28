@@ -5,7 +5,7 @@
 
 This is an example ROS2 (python) package which demonstrates how to utilize the `sensor_msg.msg.PointCloud2`. The various scripts show how to publish a point cloud represented by a `numpy` array as a `PointCloud2` message, and vice versa. I also demonstrate how to visualize a point cloud in RViz2.
 
-**Note:** This was initially posted on [SebastianGrans.github.io](SebastianGrans.github.io), but this is the more recent version.
+**Note:** This was initially posted on [SebastianGrans.github.io](http://sebastiangrans.github.io), but this is the more recent version.
 
 ## Installation
 
