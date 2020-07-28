@@ -1,13 +1,19 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>pcd_publisher</name>
+  <name>pcd_demo</name>
   <version>0.0.1</version>
-  <description>Demo on how to visualize point clouds with RViz2 and Python</description>
-  <maintainer email="sebastian.grans@gmail.com">grans</maintainer>
+  <description>Demo on how to utilize the sensor_msgs::msg::PointCloud2 message type in ROS2, RViz2 and numpy.</description>
+  <maintainer email="sebastian.grans@ntnu.no">Sebastian Grans</maintainer>
   <license>MIT License</license>
 
   <buildtool_depend>ament_python</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>numpy</exec_depend>
+  <exec_depend>open3d</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

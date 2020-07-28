@@ -75,7 +75,7 @@ def point_cloud(points, parent_frame):
     # In a PointCloud2 message, the point cloud is stored as an byte 
     # array. In order to unpack it, we also include some parameters 
     # which desribes the size of each individual point.
-    
+        
     
     ros_dtype = sensor_msgs.PointField.FLOAT32
     dtype = np.float32
@@ -101,7 +101,7 @@ def point_cloud(points, parent_frame):
         is_bigendian=False,
         fields=fields,
         point_step=(itemsize * 3), # Every point consists of three float32s.
-        row_step=(itemsize * 3 * points.shape[0]), 
+        row_step=(itemsize * 3 * points.shape[0]),
         data=data
     )
 
