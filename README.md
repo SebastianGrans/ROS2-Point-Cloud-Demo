@@ -47,7 +47,7 @@ RViz should now show a spinning Utah teapot!
 #### Manually
 
 ```
-ros2 run pcd_demo pcd_publisher_node ~/dev_ws/src/pcd_demo/resource/teapot.ply    
+ros2 run pcd_demo pcd_publisher_node ~/dev_ws/src/ROS2-Point-Cloud-Demo/resource/teapot.ply    
 ```
 In a new terminal:
 ```
