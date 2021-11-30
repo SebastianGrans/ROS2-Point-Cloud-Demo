@@ -7,13 +7,11 @@
   <maintainer email="sebastian.grans@ntnu.no">Sebastian Grans</maintainer>
   <license>MIT License</license>
 
-  <buildtool_depend>ament_python</buildtool_depend>
 
   <exec_depend>rclpy</exec_depend>
+  <exec_depend>ros2launch</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>sensor_msgs</exec_depend>
-  <exec_depend>numpy</exec_depend>
-  <exec_depend>open3d</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

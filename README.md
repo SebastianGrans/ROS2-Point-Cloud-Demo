@@ -7,6 +7,8 @@ This is an example ROS2 (python) package which demonstrates how to utilize the `
 
 **Note:** This was initially posted on [SebastianGrans.github.io](http://sebastiangrans.github.io), but this is the more recent version.
 
+**This is now updated to work on ROS2 Galactic**  
+
 ## Installation
 
 Move to your ROS workspace source folder, e.g:
@@ -19,9 +21,11 @@ git clone https://github.com/SebastianGrans/ROS2-Point-Cloud-Demo.git
 ```
 Compile:
 ```
+cd ~/dev_ws/
+source /opt/ros/galactic/setup.sh
 colcon build --symlink-install --packages-select pcd_demo
+source install/
 ```
-
 
 ## Running
 Source the installation:
@@ -43,7 +47,7 @@ RViz should now show a spinning Utah teapot!
 #### Manually
 
 ```
-ros2 run pcd_demo pcd_publisher_node ~/dev_ws/src/pcd_publisher/resource/teapot.ply    
+ros2 run pcd_demo pcd_publisher_node ~/dev_ws/src/pcd_demo/resource/teapot.ply    
 ```
 In a new terminal:
 ```
@@ -55,6 +59,8 @@ RViz should now show a spinning Utah teapot!
 
 ### Subscriber demo
 This demo is similar to the one above, but rather than relying on RViz, we instead use [Open3D](http://www.open3d.org/) for visualization. 
+
+**Note:** This is not yet fully optimized. It needs to be threaded such that the Open3D interface is responsive. 
 
 #### Running from launch file
 
