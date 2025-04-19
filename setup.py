@@ -20,13 +20,12 @@ setup(
         # And the ply files.
         (os.path.join('share', package_name, "resource"), glob('resource/*.ply')),
     ],
-    install_requires=['setuptools'],
+    install_requires=['setuptools', "open3d"],
     zip_safe=True,
     maintainer='Sebastian Grans',
-    maintainer_email='sebastian.grans@ntno.com',
+    maintainer_email='sebastian.grans@<somewhere>.com',
     description='Demo package on how to visualize a point cloud using RViz',
     license='MIT License',
-    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'pcd_publisher_node = pcd_demo.pcd_publisher.pcd_publisher_node:main',

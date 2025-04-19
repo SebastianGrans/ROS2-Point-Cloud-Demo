@@ -1,7 +1,4 @@
-Visualizing_PCDs_in_RViz2.md
-.vscode/
-__pycache__
-
-
-
-
+build/
+**.egg-info/
+__pycache__/
+typings/
